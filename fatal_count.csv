@@ -1,0 +1,151 @@
+YEAR,ROADS,COUNT
+2011,"Princes Highway, East Gippsland",3
+2011,"Benetook Avenue, Mildura",2
+2011,"Calder Highway, Buloke",2
+2011,"Goulburn Valley Highway, Moira",2
+2011,"Great Alpine Road, East Gippsland",2
+2011,"Henty Highway, Horsham",2
+2011,"Hume Freeway, Benalla",2
+2011,"Hume Freeway, Wangaratta",2
+2011,"Hyland Highway, Wellington",2
+2011,"Princes Highway, Surf Coast",2
+2011,"South Gippsland Highway, South Gippsland",2
+2011,"Strzelecki Highway, South Gippsland",2
+2011,"Surf Coast Highway, Surf Coast",2
+2011,"Anderson Road, Mitchell",1
+2011,"Anzac Avenue, Mitchell",1
+2012,"Murray Valley Highway, Swan Hill",3
+2012,"Princes Highway, Geelong",3
+2012,"Glenelg Highway, Ararat",2
+2012,"Goulburn Valley Highway, Murrindindi",2
+2012,"Hume Freeway, Mitchell",2
+2012,"Hume Freeway, Strathbogie",2
+2012,"Murray Valley Highway, Gannawarra",2
+2012,"Phillip Island Road, Bass Coast",2
+2012,"Princes Highway, East Gippsland",2
+2012,"Princes Highway, Latrobe",2
+2012,"Romsey Road, Macedon Ranges",2
+2012,"Albert Street, Horsham",1
+2012,"Allies Road, Bendigo",1
+2012,"Anakie Road, Geelong",1
+2012,"Axedale-Toolleen Road, Bendigo",1
+2013,"Hume Freeway, Mitchell",3
+2013,"Princes Highway, Wellington",3
+2013,"Calder Highway, Mildura",2
+2013,"Geelong-Bacchus Marsh Road, Moorabool",2
+2013,"Hamilton Highway, Corangamite",2
+2013,"Monaro Highway, East Gippsland",2
+2013,"Northern Highway, Campaspe",2
+2013,"South Gippsland Highway, South Gippsland",2
+2013,"Sunraysia Highway, Ballarat",2
+2013,"Western Highway, Northern Grampians",2
+2013,"Albert Street, Moyne",1
+2013,"Ararat-St Arnaud Road, Pyrenees",1
+2013,"Bacchus Marsh Road, Geelong",1
+2013,"Back Eildon Road, Murrindindi",1
+2013,"Baranduda Boulevard, Wodonga",1
+2014,"Princes Highway, East Gippsland",3
+2014,"Strzelecki Highway, South Gippsland",3
+2014,"Calder Freeway, Macedon Ranges",2
+2014,"Hume Freeway, Wangaratta",2
+2014,"Northern Highway, Campaspe",2
+2014,"Princes Highway, Glenelg",2
+2014,"Agar Road, Bass Coast",1
+2014,"Archdale-Dunolly Road, Central Goldfields",1
+2014,"Avoca Road, Central Goldfields",1
+2014,"Bacchus Marsh Road, Geelong",1
+2014,"Back St Arnaud Road, Buloke",1
+2014,"Ballarat-Daylesford Road, Moorabool",1
+2014,"Baranduda Boulevard, Wodonga",1
+2014,"Baringhup Road, Mount Alexander",1
+2014,"Barrabool Road, Geelong",1
+2015,"Goulburn Valley Highway, Murrindindi",5
+2015,"Princes Highway, East Gippsland",4
+2015,"Hume Freeway, Mitchell",3
+2015,"Benalla-Tocumwal Road, Moira",2
+2015,"Broadford-Flowerdale Road, Murrindindi",2
+2015,"Cape Otway Road, Surf Coast",2
+2015,"Cobden-Warrnambool Road, Corangamite",2
+2015,"Meeniyan-Promontory Road, South Gippsland",2
+2015,"Western Highway, Horsham",2
+2015,"Airfield Road, Latrobe",1
+2015,"Alfred Street, Baw Baw",1
+2015,"Andrews Road, Shepparton",1
+2015,"Arcadia Two Chain Road, Strathbogie",1
+2015,"Archer Street, Shepparton",1
+2015,"Ashbourne Road, Macedon Ranges",1
+2016,"Western Freeway, Moorabool",4
+2016,"Mansfield-Woods Point Road, Mansfield",2
+2016,"Midland Highway, Hepburn",2
+2016,"Murray Valley Highway, Indigo",2
+2016,"Portland-Nelson Road, Glenelg",2
+2016,"Princes Way, Baw Baw",2
+2016,"Remembrance Drive, Ballarat",2
+2016,"Allies Road, Bendigo",1
+2016,"Anglesea Road, Surf Coast",1
+2016,"Back Beach Road, Bass Coast",1
+2016,"Balaclava Road -New Dookie Road, Shepparton",1
+2016,"Ballan-Daylesford Road, Moorabool",1
+2016,"Ballarat Road -Church Street, Geelong",1
+2016,"Beechworth-Wodonga Road, Indigo",1
+2016,"Bellarine Highway -Ormond Road, Geelong",1
+2017,"Hume Freeway, Strathbogie",3
+2017,"Campbell Road, Moira",2
+2017,"Glenelg Highway, Golden Plains",2
+2017,"Glenelg Highway, Southern Grampians",2
+2017,"Hume Freeway, Benalla",2
+2017,"Hyland Highway, Wellington",2
+2017,"Maroondah Highway, Murrindindi",2
+2017,"Midland Highway, Golden Plains",2
+2017,"Murray Valley Highway, Moira",2
+2017,"Sunraysia Highway, Pyrenees",2
+2017,"Atkins Road, Surf Coast",1
+2017,"Autumn Street, Geelong",1
+2017,"Axedale-Goornong Road, Bendigo",1
+2017,"Bacchus Marsh Road, Geelong",1
+2017,"Bacchus Marsh Road, Moorabool",1
+2018,"Fogartys Gap Road, Mount Alexander",2
+2018,"Great Alpine Road, Alpine",2
+2018,"Mcivor Highway, Bendigo",2
+2018,"Northern Highway, Bendigo",2
+2018,"Portland-Nelson Road, Glenelg",2
+2018,"Princes Highway, East Gippsland",2
+2018,"South Gippsland Highway, South Gippsland",2
+2018,"Amphitheatre Road, Pyrenees",1
+2018,"Ararat-Halls Gap Road, Northern Grampians",1
+2018,"Beechworth-Wangaratta Road, Wangaratta",1
+2018,"Benetook Avenue, Mildura",1
+2018,"Blackwood Road, Hepburn",1
+2018,"Bogong High Plains Road, East Gippsland",1
+2018,"Borough Road, Bendigo",1
+2018,"Brandy Creek Road, Baw Baw",1
+2019,"Thompson Road, Geelong",5
+2019,"Western Freeway, Moorabool",3
+2019,"Calder Alternative Highway, Bendigo",2
+2019,"Calder Highway, Buloke",2
+2019,"Geelong-Bacchus Marsh Road, Moorabool",2
+2019,"Gumley Road, Golden Plains",2
+2019,"Princes Highway, Glenelg",2
+2019,"South Gippsland Highway, South Gippsland",2
+2019,"Sturt Highway, Mildura",2
+2019,"Western Highway, Ararat",2
+2019,"Arnold Street, Bendigo",1
+2019,"Bacchus Marsh Road, Geelong",1
+2019,"Baillie Street, Horsham",1
+2019,"Bairnsdale-Dargo Road, East Gippsland",1
+2019,"Ballarat-Maryborough Road, Central Goldfields",1
+2020,"South Gippsland Highway, South Gippsland",4
+2020,"Ballan-Daylesford Road, Moorabool",2
+2020,"Liddiard Road, Latrobe",2
+2020,"Princes Highway, Warrnambool",2
+2020,"Ajax Road, Hepburn",1
+2020,"Apsley-Natimuk Road, West Wimmera",1
+2020,"Baynes Gully Road, Indigo",1
+2020,"Bolitho Road, Campaspe",1
+2020,"Bonang Road, East Gippsland",1
+2020,"Calder Highway, Bendigo",1
+2020,"Carpendeit-Bungador Road, Corangamite",1
+2020,"Clunes-Mt Cameron Road, Central Goldfields",1
+2020,"Coach Road, Shepparton",1
+2020,"Craven Road, Shepparton",1
+2020,"Curr Road, Campaspe",1
