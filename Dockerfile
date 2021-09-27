@@ -1,4 +1,4 @@
-FROM rocker/shiny:4.0.4
+FROM rocker/shiny:4.1.1
 RUN install2.r rsconnect tidyverse shinythemes shinyWidgets highcharter leaflet leaflet.extras
 WORKDIR /home/shinyusr
 COPY app.R app.R 
