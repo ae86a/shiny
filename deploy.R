@@ -16,7 +16,7 @@ setAccountInfo(name = error_on_missing_name("SHINY_ACC_NAME"),
 # Deploy the application.
 deployApp(
   appFiles = c("app.R", "AC111_v2.csv", "AC112.csv", "fatal_count.csv", 
-               "i3.csv", "./www/hume.png", "./www/d1.png"
+               "i3.csv", "./www/hume.png"
                # you can specify which files to deploy, 
                # or keep this NULL to deploy everything
   ),
