@@ -73,11 +73,12 @@ ui <- fluidPage(
                  p("Tips 2: The number in circles on the map indicates the number of 
                    (fatal) accidents in a certain area. Click them for more information.", 
                    style = "font-family: 'Arial'; font-size: 16px; color:grey"), 
+                 br(),
                  
                  # set a selection box
                  checkboxGroupInput(inputId = 'SEVERITY', 
-                                    label = img(src = "d1.png", width = "50%"), 
-                                    choices = c('Only Display Fatal Accidents'=1), 
+                                    label = 'Only Display Fatal Accidents:', 
+                                    choices = c('Yes'=1), 
                                     selected = df2$Year
                                     ),
                  
