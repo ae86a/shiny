@@ -7,6 +7,5 @@ COPY AC111_v2.csv AC111_v2.csv
 COPY AC112.csv AC112.csv
 COPY fatal_count.csv fatal_count.csv
 COPY www/hume.png www/hume.png
-COPY www/d1.png www/d1.png
 COPY i3.csv i3.csv
 CMD Rscript deploy.R
