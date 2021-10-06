@@ -7,13 +7,11 @@ library(tidyverse)
 library(leaflet.extras)
 
 # load data
-df <- read.csv("AC111_v2.csv")
+df <- read.csv("comparison.csv")
 df$FA_TA_PCT <- round(df$FA_TA_PCT*100, 2)
 df <- rename(df, PERCENTAGE=FA_TA_PCT)
 # load data
-df1 <- read.csv("AC112.csv")
 df2 <- read.csv("i3.csv")
-df3 <- read.csv("fatal_count.csv")
 
 # UI
 ui <- fluidPage(
@@ -33,9 +31,7 @@ ui <- fluidPage(
                
                # description
                sidebarPanel(
-                 p("Tips: Hover your mouse on the graphs for more information.", 
-                   style = "font-family: 'Arial'; font-size: 16px; color:grey"),
-                 br(),
+
                  p("Which is more dangerous, urban roads or rural roads?", 
                    style = "font-family: 'Arial'; font-size: 16px; color:black"), 
                  br(),
@@ -49,8 +45,10 @@ ui <- fluidPage(
                  p("When you finish observing the second chart, you must have a new answer in your mind.", 
                    style = "font-family: 'Arial'; font-size: 16px; color:black"), 
                  br(), 
-                 br(), 
-                 img(src = "hume.png", width = "100%")
+                 p("Tips: Hover your mouse on the graphs for more information.", 
+                   style = "font-family: 'Arial'; font-size: 16px; color:grey"),
+                 br(),
+                 img(src = "Ararat_Road.jpg", width = "100%")
                  ), 
                
                # charts
@@ -67,18 +65,10 @@ ui <- fluidPage(
                # description
                sidebarPanel(
                  
-                 p("Tips 1: Hover your mouse on the bar charts for specific numbers; 
-                   Click any bar to get detailed locations.", 
-                   style = "font-family: 'Arial'; font-size: 16px; color:grey"),
-                 p("Tips 2: The number in circles on the map indicates the number of 
-                   (fatal) accidents in a certain area. Click them for more information.", 
-                   style = "font-family: 'Arial'; font-size: 16px; color:grey"), 
-                 br(),
-                 
                  # set a selection box
                  checkboxGroupInput(inputId = 'SEVERITY', 
-                                    label = 'Only Display Fatal Accidents:', 
-                                    choices = c('Yes'=1), 
+                                    label = img(src = "d1.png", width = "46%"),  
+                                    choices = c('Only Display Fatal Accidents'=1), 
                                     selected = df2$Year
                                     ),
                  
@@ -88,10 +78,20 @@ ui <- fluidPage(
                              choices = c("2020"="2020", "2019"="2019", "2018"="2018", 
                                          "2017"="2017", "2016"="2016", "2015"="2015", 
                                          "2014"="2014", "2013"="2013", "2012"="2012", "2011"="2011")
-                             ),
-                 
-                 highchartOutput("bar_chart", width = "100%", height = "100%"), 
-                 textOutput("text")
+                             ), 
+                 p("Tips 1: The number in circles on the map indicates the number of 
+                   (fatal) accidents in a certain area. Click them for more information.", 
+                   style = "font-family: 'Arial'; font-size: 16px; color:grey"),
+                 p("Tips 2: Click the reset button if you get lost in the map.", 
+                   style = "font-family: 'Arial'; font-size: 16px; color:grey"), 
+                 p("Tips 3: Click the real-time positioning button if you want to see the traffic 
+                   accident situation in the nearby area. Please remember to close it after using it.", 
+                   style = "font-family: 'Arial'; font-size: 16px; color:grey"), 
+                 p("Tips 4: Click the search button and input a certain road or an certain area if you 
+                   want to know their accidents information. (The recommended format: 1. Road, Area (or Victoria); 
+                   2. Area, Victoria)", 
+                   style = "font-family: 'Arial'; font-size: 16px; color:grey"), 
+                 img(src = "hume.png", width = "100%")
                  ), 
                
                # charts
@@ -106,36 +106,6 @@ ui <- fluidPage(
 
 
 server <- function(input, output, session) {
-
-  # bar chart
-  output$bar_chart <- renderHighchart({
-    
-    # click event
-    canvas_cf <- JS("function(event) {Shiny.onInputChange('canvasClicked', [this.name, event.point.category]);}")
-    
-    if(length(input$SEVERITY) > 0)
-      bd <- df3[df3$YEAR==input$Year, ]
-    else
-      bd <- df1[df1$YEAR==input$Year, ]
-    
-    bar_chart <- 
-      highchart() %>% 
-      hc_chart(type ="column", options3d = list(enabled = TRUE, beta = 15, alpha = 15)) %>%
-      hc_xAxis(categories = bd$ROADS) %>% 
-      hc_add_series(data = bd$COUNT, name = "Accidents", showInLegend = F) %>%
-      
-      # title
-      hc_title(text = "Top-15 Accidents Statistics Rank", margin = 20, 
-               align = "left", style = list(color = "steelblue")) %>% 
-      # set pop-up information
-      hc_tooltip(backgroundColor = "lightyellow", shared = TRUE, borderWidth = 1)  %>% 
-      hc_add_theme(hc_theme_gridlight()) %>% 
-      hc_plotOptions(series = list(stacking = FALSE, events = list(click = canvas_cf)))
-  })
-  
-  makeReactiveBinding("outputText")
-  observeEvent(input$canvasClicked, { outputText <<- paste0(input$canvasClicked[2], ", Victoria, Australia") } )
-  output$text <- renderText({outputText})
   
   # Map
   output$map <- renderLeaflet({
