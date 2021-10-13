@@ -32,17 +32,13 @@ ui <- fluidPage(
                # description
                sidebarPanel(
 
-                 p("Which is more dangerous, urban roads or rural roads?", 
-                   style = "font-family: 'Arial'; font-size: 16px; color:black"), 
-                 br(),
-                 p("I guess you will choose urban roads. Especially after observing the first chart, 
-                   this must make you more convinced of this.", 
+                 p("Which is more dangerous in the first chart, urban roads or rural roads?", 
                    style = "font-family: 'Arial'; font-size: 16px; color:black"), 
                  br(),
                  p(strong("However, is this really the case?"), 
                    style = "font-family: 'Arial'; font-size: 16px; color:black"), 
                  br(), 
-                 p("When you finish observing the second chart, you must have a new answer in your mind.", 
+                 p("Consider this question again after observing the second chart.", 
                    style = "font-family: 'Arial'; font-size: 16px; color:black"), 
                  br(), 
                  p("Tips: Hover your mouse on the graphs for more information.", 
@@ -88,8 +84,9 @@ ui <- fluidPage(
                    accident situation in the nearby area. Please remember to close it after using it.", 
                    style = "font-family: 'Arial'; font-size: 16px; color:grey"), 
                  p("Tips 4: Click the search button and input a certain road or an certain area if you 
-                   want to know their accidents information. (The recommended format: 1. Road, Area (or Victoria); 
-                   2. Area, Victoria)", 
+                   want to know their accidents information.", br(), "The recommended format 1: 
+                     Road, Area (or Victoria)", br(), "The recommended format 2: Area, Victoria", 
+                   style = "font-family: 'Arial'; font-size: 16px; color:grey", 
                    style = "font-family: 'Arial'; font-size: 16px; color:grey"), 
                  img(src = "hume.png", width = "100%")
                  ), 
@@ -155,9 +152,7 @@ server <- function(input, output, session) {
       addLegend(title = "Accidents Severity", pal = pal, opacity = 0.7, 
                 values = ~c("Fatal", "Non Injury", "Other Injury", "Serious Injury")) %>% 
       addResetMapButton() %>% 
-      # Add location function
-      addControlGPS(options = gpsOptions(position = "topleft", activate = F, autoCenter = TRUE,
-                                         maxZoom = 7, setView = TRUE)) %>% 
+
       addSearchOSM(options = searchOptions(position = "topleft", minLength = 2, 
                                            moveToLocation = TRUE, zoom = 10, 
                                            autoResize=TRUE, autoCollapse = TRUE))
